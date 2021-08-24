@@ -38,7 +38,7 @@ app.post("/send", (req, res) => {
   `;
 
   let transporter = nodemailer.createTransport({
-    host: "squeakfix.com.ng",
+    host: process.env.THE_HOST,
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
