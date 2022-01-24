@@ -57,4 +57,4 @@ app.post("/send", (req, res) => {
 });
 
 app.get("/", (req, res) => res.send("welcome to a live server"));
-app.listen(process.env.PORT || 5001, () => console.log("Server Running"));
+app.listen(process.env.PORT || 8080, () => console.log("Server Running"));
